@@ -1,0 +1,96 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .controller {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+
+    flex-direction: column;
+
+    .field {
+      display: flex;
+      align-items: center;
+
+      input {
+        padding: 9px 10px;
+        border: 1px solid grey;
+        outline: none;
+        font-size: 20px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .display {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+  }
+}
+
+.movement-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.movement-controls button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.movement-controls button:nth-child(1) {
+  grid-column: 2;
+}
+
+.movement-controls button:nth-child(2) {
+  grid-column: 2;
+}
+
+.movement-controls button:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.movement-controls button:nth-child(4) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  /* padding: 2em; */
+}
+
+.read-the-docs {
+  color: #888;
+}
